@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin:0;
+    
+}
+
+body{
+
+    background-color: rgb(244, 244, 235);
+
+}
+
+header{
+
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: #fff584;
+    z-index: 5;
+
+}
+
+
+
+.logo{
+
+    height: 103px;
+
+}
+
+.nombreEmpresa{
+
+    margin-top: 157px;
+    margin-left: 600px;
+
+}
+
+.destino1{
+
+    width: 407px;
+    height: 356px;
+
+}
