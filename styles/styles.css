@@ -1,45 +1,35 @@
 *{
+
+    margin: 0;
     padding: 0;
-    margin:0;
-    
+    box-sizing: border-box;
+    font-family: sans-serif;
+
 }
 
-body{
+.logo{
 
-    background-color: rgb(244, 244, 235);
+    max-width: 7rem;
 
 }
 
 header{
 
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    background: #fff584;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: rgba(219, 197, 85, 0.942);
     z-index: 5;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    
 
 }
 
+.informacion{
 
-
-.logo{
-
-    height: 103px;
-
-}
-
-.nombreEmpresa{
-
-    margin-top: 157px;
-    margin-left: 600px;
-
-}
-
-.destino1{
-
-    width: 407px;
-    height: 356px;
+    margin-top: 178px;
 
 }
