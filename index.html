@@ -8,6 +8,7 @@
    
     <script src="js/jquery-3.7.1.js"></script>
     <script src="js/script.js"></script>
+    
    
 </head>
 
@@ -17,59 +18,114 @@
 
         <img src="img/logo.png" alt="Logo de la empresa TaxiPro" class="logo">
 
-        <p class="slogan">Ride with freedom, ride with safety</p>
+        <p class="slogan">Travel with freedom, travel with Safety</p>
+
+        <img src="img/us-flag.svg" alt="Bandera de EEUU" class="flag" id="flag-us">
        
 
     </header>
 
-    <section class="informacion">
+    <section class="information">
 
-        <h1 class="nombreEmpresa">TaxiPro</h1>
+        <h1 class="company-name">TaxiPro</h1>
 
-        <article class="nosotros">
+        <article class="about-us">
 
-            <h2>Quienes somos?</h2><br>
+            <h2>¿Quienes somos?</h2><br>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum minus quasi 
-                explicabo. Quos dolorem iusto, saepe sequi, dolore error rem, molestias et amet 
-                deserunt facere! Nemo quia incidunt sed 
-                </p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum repudiandae 
-                labore, fuga adipisci voluptatem placeat nam laboriosam alias. Tempora ea eaque 
-                ullam vero saepe perferendis vitae dolore ad quibusdam perspiciatis!</p><br>
+            <p>Bienvenido a <strong>TaxiPro</strong>, su servicio de taxis confiable. Solicite su taxi fácilmente 
+                con TaxiPro. Ofrecemos seguridad, nuestros choferes conocen bien las rutas, nos 
+                comprometemos a ofrecer un servicio de alta calidad en cada viaje y disponemos de 
+                precios competitivos. <strong><a href="">Reserve</a></strong> con nosotros hoy mismo y descubra la diferencia.
+                Puede ver en <strong><a href="">TripAdvisor</a></strong> las experiencias de nuestros clientes.
+                ¡No se arrepentirá!
+            </p><br>
 
             
 
         </article>
 
-        <article class="informacionReserva">
+        <article class="reservation-information">
 
-            <h2>Como reservar?</h2><br>
+            <h2>¿Como reservar?</h2><br>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In eum optio repudiandae 
-                assumenda a natus reiciendis eligendi facilis nulla qui atque quaerat omnis,
-                 tenetur rerum voluptatum iusto tempore nesciunt debitis!</p>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nisi voluptas 
-                nesciunt fuga veritatis voluptatem molestias voluptatum, tempore assumenda aut 
-                fugiat similique dolore dolorem sapiente ducimus perspiciatis quia odio quasi.</p><br>
+            <p>Para reservar puede presionar el boton que aparece debajo de este párrafo o puede 
+                utilizar el boton flotante con icono de WhatsApp que se muestra en la página, lo 
+                que lo redirigirá al chat de WhatsApp de nuestro agente donde podrá establecer 
+                contacto con él. También puede contactarnos a través de nuestras redes que aparecen 
+                en la sección de <em><a href="#contact-us">Contactanos</a></em>.
+            </p><br><br>
+            
+                <button class="btn-reservation" width="600">Reservar</button>
 
         </article>
 
 
     </section>
 
-    <section class="destinos">
+    <section class="destinations-galery">
         <h2>Destinos</h2>
+        <div class="filter">
+
+            <p><strong>Filtrar por Provincia:</strong> </p> 
+            <input type="radio" id="provincia1" name="provincia" value="Matanzas">
+            <label for="provincia1">Matanzas</label>
+            <br>
+            <input type="radio" id="provincia2" name="provincia" value="La Habana">
+            <label for="provincia2">La Habana</label>
+            <br>
+            <input type="radio" id="provincia3" name="provincia" value="Pinar del Río">
+            <label for="provincia3">Pinar del Río</label>
+            <br>
+            <input type="radio" id="provincia4" name="provincia" value="Pinar del Río">
+            <label for="provincia4">Villa Clara</label>
+            <br>
+            <input type="radio" id="provincia5" name="provincia" value="Pinar del Río">
+            <label for="provincia5">Cienfuegos</label>
+            <br>
+
+        </div>
+        <div class="galery">
+            <div class="card">
+              <img src="img/imagen1.webp" alt="Destino 1">
+              <h3>Cuevas de Bellamar</h3>
+              <p><a href="">Ver en el mapa</a></p>
+            </div>
+            <div class="card">
+              <img src="img/imagen2.webp" alt="Destino 2">
+              <h3>Destino 2</h3>
+              <p><a href="">Ver en el mapa</a></p>
+            </div>
+            <div class="card">
+              <img src="img/imagen3.webp" alt="Destino 3">
+              <h3>Destino 3</h3>
+              <p><a href="">Ver en el mapa</a></p>
+            </div>
+            <div class="card">
+                <img src="img/imagen4.webp" alt="Destino 3">
+                <h3>Destino 4</h3>
+                <p><a href="">Ver en el mapa</a></p>
+              </div>
+
+              <div class="card">
+                <img src="img/imagen5.webp" alt="Destino 3">
+                <h3>Destino 5</h3>
+                <p><a href="">Ver en el mapa</a></p>
+              </div>
+          </div>
+           
     </section>
 
 
-    <footer>
+    <footer class="contact-us" id="contact-us">
         <h3>Contacto</h3>
+        <p>WhatsApp : <a href="https://wa.me/639376770" target="_blank" >639376770</a></p>
+        <p>Instagram :</p>
     </footer>
 
-    <button class="botonReserva" width="600">Reservar</button>
-
+    <div>
+    <a href="https://wa.me/639376770" class="btn-whatsapp" target="_blank" ><img src="img/icons8-whatsapp-100.svg" alt=""></a>
+    </div>
    
 
 </body>
