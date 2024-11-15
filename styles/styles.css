@@ -54,7 +54,7 @@ header{
     width: 100%;
     top: 0;
      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-     height: 95px;
+     height: 90px;
      font-size: 22px;
     
 
@@ -92,6 +92,7 @@ header{
 .information{
     text-align: center;
     margin-top: 130px;  
+   
 
 }
 
@@ -117,65 +118,23 @@ header{
 
 }
 
-.destinations-galery{
+.services{
 
   text-align: center;
   padding: 20px;
   margin: 5px;
+  
  
 }
 
-.filter{
+.services h3{
 
-  margin: 15px;
-  float: left;
-  display: flex;
+  margin: 20px;
 
 }
 
-  
 
-.filter input[type="radio"] {
-  
- display: none;
-}
-
-.filter label {
-  position: relative; 
-  cursor: pointer; 
-  padding-left: 35px;
-  margin-right: 20px;
-  left: 5px;
-  font-size: 1em; 
-  color: #333; 
-}
-
-.filter label::before {
-  content: ""; 
-  position: absolute; 
-  left: 10px; 
-  top: 50%; 
-  transform: translateY(-50%);
-  width: 15px; 
-  height: 15px; 
-  border: 1px solid #007bff; 
-  border-radius: 50%; 
-  background-color: rgba(255, 255, 255, 0.893); 
-  transition: background-color 0.3s, border-color 0.3s; 
-}
-
-.filter input[type="radio"]:checked + label::before {
-  background-color: #ffb300; 
-  border-color: #b39e00;
-}
-
-.filter label:hover::before {
-  background-color: rgba(0, 123, 255, 0.1); 
-}
-
-
-
-.galery {
+.galery1, .galery2 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 20px;
@@ -184,6 +143,10 @@ header{
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -209,19 +172,30 @@ header{
 
 .card p {
   font-size: 14px;
-  margin: 10px;
+  margin: 15px;
   text-align: center;
 }
 
-.card a{
+.card p >a{
   text-decoration: none;
-  color: #666;
+  color:cadetblue;
   border: 1px solid rgba(219, 197, 85, 0.942);
+  border-radius: 30px;
   box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 3px;
- 
+  cursor: pointer;
+  font-size: 16px;
+  font-style: italic;
+  font-family: Quicksand, Georgia, Times New Roman, Times, serif;
+  padding: 7px;
+  
+}
+.card strong{
+
+  color: cadetblue;
 
 }
+
 
 .card a:visited{
   color: rgb(255, 196, 0);
@@ -245,7 +219,158 @@ a{
 
 }
 
+.btn-change {
+  position: absolute;/* Para que el span se comporte como un botón */
+  color: white;
+  font-size: 24px; /* Tamaño de la flecha */
+  margin-left: 7px; /* Espacio a la izquierda de la flecha */
+  cursor: pointer;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #49526ad3, #28324fd3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid ;
+  transition: transform 0.5s ease,  opacity 0.5s ease;
+  opacity: 1
+}
 
+.btn-change:hover {
+  filter: brightness(1.2);
+  
+}
+
+.rotate-left {
+  transform: rotate(-180deg); /* Rotación hacia la izquierda */
+}
+
+.rotate-right {
+  transform: rotate(180deg); /* Rotación hacia la derecha */
+}
+
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed; /* Fijo en la pantalla */
+  z-index: 1000; /* Por encima de otros elementos */
+  left: 0;
+  top: 0;
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Alto completo */
+  overflow: auto; /* Habilitar scroll si es necesario */
+  background-color:  rgba(219, 197, 85, 0.942);/* Fondo negro con opacidad */
+}
+
+.modal-content {
+  margin-top: 92px;  
+  background-color: #f4eccd;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%; /* Ancho del modal */
+  height: 100%;
+  text-align: center;
+}
+
+#modal-description{
+ 
+  margin: 30px;
+}
+
+
+#modal-title{
+  padding-top: 20px;
+  margin-top: 20px;
+
+}
+
+
+.close {
+  position: absolute;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  background-color:rgba(219, 197, 85, 0.942);
+  color: black;
+  border: 2px solid #D1D5DB;
+  font-size: 2rem;
+  font-weight: 350;
+  width: 40px;
+  height: 40px;
+  border-radius: 7px;
+  transition: .3s ease;
+}
+
+.close:hover,
+.close:focus {
+  background-color: #ee0d0d;
+  border: 2px solid #ee0d0d;
+  color: #fff;
+  cursor: pointer;
+  
+}
+
+
+.modal-gallery {
+  display: flex; /* Usar flexbox para alinear las imágenes */
+  justify-content: center; /* Centra las imágenes */
+  margin-top: 20px; /* Espaciado superior */
+  flex-wrap: 20px;
+}
+
+.modal-gallery img {
+  width: 300px; /* Ancho de las imágenes */
+  height: auto; /* Mantiene la proporción de las imágenes */
+  margin: 50px 12px; /* Espaciado entre las imágenes */
+  margin-bottom: 8px;
+  border-radius: 8px; /* Bordes redondeados */
+  
+  cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+  transition: transform 0.2s; /* Transición suave para el efecto hover */
+}
+
+.modal-gallery img:hover {
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el mouse */
+}
+
+.btn-back {
+  margin-top: 20px;
+  --button_radius: 0.75em;
+  --button_color: #e8e8e8;
+  --button_outline_color: #000000;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--button_radius);
+  background: linear-gradient(
+    to bottom right,
+    var(--highlight-color),
+    var(--shadow-color)
+  );
+  box-shadow: 6px 6px 16px var(--shadow-color),
+    -6px -6px 16px var(--highlight-color);
+  cursor: pointer;
+}
+
+.btn-back-content {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background-color: rgba(219, 197, 85, 0.942);;
+  color: var(--button_outline_color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+
+.btn-back:hover .btn-back-content {
+  transform: translateY(-0.33em);
+}
+
+.btn-back:active .btn-back-content {
+  transform: translateY(0);
+}
 
 
 
@@ -308,7 +433,7 @@ a{
 
   position: fixed; /* Posiciona el botón de forma fija */
     bottom: 30px; /* Distancia desde la parte inferior de la página */
-    left: 50%; /* Distancia desde el lado derecho de la página */
+    left: 95%; /* Distancia desde el lado derecho de la página */
     transform: translateX(-50%);
     width: 60px; /* Ancho del botón */
     height: 60px; /* Altura del botón */

@@ -18,11 +18,10 @@
 
         <img src="img/logo.png" alt="Logo de la empresa TaxiPro" class="logo">
 
-        <p class="slogan">Travel with freedom, travel with Safety</p>
+        <p class="slogan">Travel with freedom, travel with safety</p>
 
         <img src="img/us-flag.svg" alt="Bandera de EEUU" class="flag" id="flag-us">
        
-
     </header>
 
     <section class="information">
@@ -34,7 +33,7 @@
             <h2>¿Quienes somos?</h2><br>
 
             <p>Bienvenido a <strong>TaxiPro</strong>, su servicio de taxis confiable. Solicite su taxi fácilmente 
-                con TaxiPro. Ofrecemos seguridad, nuestros choferes conocen bien las rutas, nos 
+                con TaxiPro. Ofrecemos seguridad, nuestros choferes conocen bien las rutas, estan altamente calificados y cuentan con mucha experiencia, nos 
                 comprometemos a ofrecer un servicio de alta calidad en cada viaje y disponemos de 
                 precios competitivos. <strong><a href="">Reserve</a></strong> con nosotros hoy mismo y descubra la diferencia.
                 Puede ver en <strong><a href="">TripAdvisor</a></strong> las experiencias de nuestros clientes.
@@ -63,33 +62,114 @@
 
     </section>
 
-    <section class="destinations-galery">
-        <h2>Destinos</h2>
-        <div class="filter">
+    <section class="services">
+        <h2>Servicios</h2>
+        
+        <h3>Traslados desde aeropuertos</h3>
+        <div class="galery1">
 
-            <p><strong>Filtrar por Provincia:</strong> </p> 
-            <input type="radio" id="provincia1" name="provincia" value="Matanzas">
-            <label for="provincia1">Matanzas</label>
-            <br>
-            <input type="radio" id="provincia2" name="provincia" value="La Habana">
-            <label for="provincia2">La Habana</label>
-            <br>
-            <input type="radio" id="provincia3" name="provincia" value="Pinar del Río">
-            <label for="provincia3">Pinar del Río</label>
-            <br>
-            <input type="radio" id="provincia4" name="provincia" value="Villa Clara">
-            <label for="provincia4">Villa Clara</label>
-            <br>
-            <input type="radio" id="provincia5" name="provincia" value="Cienfuegos">
-            <label for="provincia5">Cienfuegos</label>
-            <br>
-
-        </div>
-        <div class="galery">
-          
+          <div class="card">
+            <img src="img/Traslados aeropuertos/Paseo del Prado.webp" alt="">
+            <h3>Traslado desde el aeropuerto José Martí a casas de alquiler y hoteles en <strong>La Habana</strong> y <strong>Varadero</strong>   </h3>
+            <p><a>Ver Información</a></p>
           </div>
+
+          <div class="card">
+            <img src="img/Traslados aeropuertos/Trinidad.webp" alt="">
+            <h3>Traslado desde el aeropuerto José Martí a <strong>Cienfuegos</strong> y <strong>Trinidad</strong> </h3>
+            <p><a>Ver Información</a></p>
+          </div>
+
+          <div class="card">
+            <img src="img/Traslados aeropuertos/Viñales.webp" alt="Una imagen del mural de la prehistoria Cienfuegos">
+            <h3>Traslado desde el aeropuerto José Martí a  <strong>Viñales </strong></h3>
+            <p><a>Ver Información</a></p>
+          </div>
+
+          <div class="card">
+            <img src="img/Traslados aeropuertos/Internacional.webp" alt="">
+            <h3>Traslado desde el aeropuerto Juan Gualberto Gómez a casas de alquiler y hoteles en <strong>La Habana </strong>y <strong>Varadero</strong></h3>
+            <p><a>Ver Información</a></p>
+          </div>
+
+          <div class="card">
+            <img src="img/Traslados aeropuertos/Cienfuegos.webp" alt="">
+            <h3>Traslado desde el aeropuerto Juan Gualberto Gómez a  <strong>Cienfuegos </strong></h3>
+            <p><a>Ver Información</a></p>
+          </div>
+        
+          </div>
+<br><br>
+          <h3>Destinos Turísticos</h3>
+          <div class="galery2">
+
+            <div class="card">
+              <img src="img/Destinos/Habana.webp" alt="">
+              <h3>Tour de un día desde Varadero hasta la Habana</h3>
+              <p><a>Ver Información</a></p>
+            </div>
+
+              <div class="card">
+                <img src="img/Destinos/Matanzas.webp" alt="">
+                <h3>Tour de un día desde Varadero hasta Matanzas</h3>
+                <p><a>Ver Información</a></p>
+                </div>
+
+                <div class="card">
+                  <img src="img/Destinos/Tres Ciudades.webp" alt="">
+                  <h3>Tour Tres Ciudades:  Villa Clara, Cienfuegos y Trinidad desde Varadero</h3>
+                  <button class="btn-change prev"><</button>
+                  <button class="btn-change next">></button>
+                  <p class="description"><a>Ver Información</a></p>
+                  </div>
+
+                  <div class="card">
+                    <img src="img/Destinos/Cienaga de Zapata.webp" alt="">
+                    <h3>Tour de un día desde Varadero hasta Cienaga de Zapata y Girón</h3>
+                    <p><a>Ver Información</a></p>
+                    </div>
+
+
+
+            
+
+          </div>
+
+
            
     </section>
+
+    <div id="modal" class="modal">
+      <header>
+
+        <img src="img/logo.png" alt="Logo de la empresa TaxiPro" class="logo">
+
+        <p class="slogan">Travel with freedom, travel with Safety</p>
+
+        <img src="img/us-flag.svg" alt="Bandera de EEUU" class="flag" id="flag-us">
+       
+
+    </header>
+
+      <div class="modal-content">
+        <button class="close" type="button">×</button>       
+        <h2 id="modal-title"></h2>
+
+      <div class="modal-gallery">
+        <img src="img/Traslados aeropuertos/Paseo del Prado.webp" alt="Imagen 1" />
+        <img src="img/Destinos/Cienaga de Zapata.webp" alt="Imagen 2" />
+        <img src="img/Destinos/Tres Ciudades.webp" alt="Imagen 3" />
+        <!-- Agrega más imágenes según sea necesario -->
+    </div>
+      <p id="modal-description"></p>
+      <p id="modal-description2"></p>
+      
+      <button class="btn-back">
+        <span class="btn-back-content">Volver atrás</span>
+      </button>
+       </div>
+
+    </div>
 
 
     <footer class="contact-us" id="contact-us">
