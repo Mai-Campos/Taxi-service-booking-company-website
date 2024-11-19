@@ -1,138 +1,154 @@
-*{
-
-    margin: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-
-  background-color: #f4eccd;
-  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-  font-size: 18px;
-
+body {
+  background-color: #fffbdb;
+  font-family: "Open_Sans";
+  font-weight: 400;
+  color: #222;
 }
 
-
-
-h1{
-
+h1 {
   font-size: 60px;
-
 }
 
-h1,h2,h3{
-
-  font-family: Quicksand, Georgia, Times New Roman, Times, serif;;
-
+h1,h2,h3 {
+  font-family: Poppins;
 }
 
-h2{
+h3 {
+  font-family: Poppins;
+  font-weight: 500;
+}
 
+h2 {
   font-size: 30px;
-
 }
 
-.logo{
+/* Inicio del banner */
 
-    max-width: 7rem;
-    margin-left: 16rem;
-    
-
+.logo {
+  max-width: 6.5rem;
+  max-height: 7rem;
+  margin-bottom: 0.5rem;
 }
 
-header{
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    background-color: rgba(219, 197, 85, 0.942);
-    z-index: 5;
-    position: fixed;
-    width: 100%;
-    top: 0;
-     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-     height: 90px;
-     font-size: 22px;
-    
-
+header {
+  box-sizing: border-box;
+  text-align: left;
+  padding: 3rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: rgba(219, 197, 85);
+  z-index: 5;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-shadow: 0 2px 5px #2226;
+  height: 5.5rem;
+  font-size: 22px;
 }
 
-.slogan{
-
-    margin-left: 2rem;
-    flex: 1;
-    display: flex;
-    align-items: center;
-     
-
+.slogan {
+  margin-left: 2rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-style: italic;
 }
 
-.flag{
-
+.flag {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-right: 40px;
   height: 25px;
   cursor: pointer;
-  box-shadow: 6px 1px 6px 1px rgba(0, 0, 0, 0.608);
-
+  box-shadow: 0 1px 7px 0 #222c;
 }
 
-.flag:hover{
-
+.flag:hover {
   transform: scale(1.1); 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
-
+  box-shadow: 0 0 9px #222c;
 }
 
-.information{
-    text-align: center;
-    margin-top: 130px;  
-   
-
+.flag:active {
+  transform: scale(0.9);
 }
 
-.about-us{
+/* Fin del banner */
 
-  border: solid 1px black;
-  padding:10px ;
-  padding-bottom: 15px;
-  margin:25px 10px;
-  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.2); 
+/* Inicio del bloque "information" */
 
-
+.information {
+  text-align: left;
+  margin-top: 7rem;
+  padding: 0.7rem 2rem;
 }
 
-.reservation-information{
-
-  border: 1px solid black;
-  padding:10px ;
-  padding-bottom: 15px;
-  margin:25px 10px;
-  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.2); 
-  
-
+.information__head {
+  text-align: center;
+  font-family: ;
 }
 
-.services{
+.information__article {
+  padding:1rem;
+  margin: 2rem 1rem;
+  box-shadow: 0 0 0.45rem 0 #2225;
+  border-radius: 0.7rem;
+}
 
+.about-us {
+}
+
+.reservation {
+}
+
+.btn-reservation{
+
+  width: 190px;
+  height: 33px;
+  padding: 25px;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  text-shadow: 4px 4px 10px yellowgreen;
+  border-radius: 10%;
+  transition-duration: 1000ms;
+  color: #5c5c5c;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-decoration: none;
+  display: flex;
+  background: linear-gradient(to right, rgb(248, 216, 216), yellow);
+}
+
+  .btn-reservation:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+    padding: 30px;
+    font-size: large;
+}
+
+
+/* Fin del bloque "information" */
+
+.services {
   text-align: center;
   padding: 20px;
   margin: 5px;
-  
- 
 }
 
-.services h3{
-
+.services h3 {
   margin: 20px;
-
 }
-
 
 .galery1, .galery2 {
   display: grid;
@@ -176,7 +192,7 @@ header{
   text-align: center;
 }
 
-.card p >a{
+.card p >a {
   text-decoration: none;
   color:cadetblue;
   border: 1px solid rgba(219, 197, 85, 0.942);
@@ -187,36 +203,26 @@ header{
   font-size: 16px;
   font-style: italic;
   font-family: Quicksand, Georgia, Times New Roman, Times, serif;
-  padding: 7px;
-  
+  padding: 7px; 
 }
-.card strong{
 
+.card strong {
   color: cadetblue;
-
 }
 
-
-.card a:visited{
+.card a:visited {
   color: rgb(255, 196, 0);
-
 }
 
-
-
-.card a:hover{
-
+.card a:hover {
   color: white;
   background-color:rgba(219, 197, 85, 0.942) ;
-
 }
 
-a{
-
+a {
   color:rgba(225, 198, 63, 0.942) ;
   text-decoration: none;
   font-size: 20px;
-
 }
 
 .btn-change {
@@ -235,7 +241,6 @@ a{
 
 .btn-change:hover {
   filter: brightness(1.2);
-  
 }
 
 .rotate-left {
@@ -268,18 +273,14 @@ a{
   text-align: center;
 }
 
-#modal-description{
- 
+#modal-description {
   margin: 30px;
 }
 
-
-#modal-title{
+#modal-title {
   padding-top: 20px;
   margin-top: 20px;
-
 }
-
 
 .close {
   position: absolute;
@@ -299,15 +300,12 @@ a{
   transition: .3s ease;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
   background-color: #ee0d0d;
   border: 2px solid #ee0d0d;
   color: #fff;
   cursor: pointer;
-  
 }
-
 
 .modal-gallery {
   display: flex; /* Usar flexbox para alinear las imágenes */
@@ -321,8 +319,7 @@ a{
   height: auto; /* Mantiene la proporción de las imágenes */
   margin: 50px 12px; /* Espaciado entre las imágenes */
   margin-bottom: 8px;
-  border-radius: 8px; /* Bordes redondeados */
-  
+  border-radius: 8px; /* Bordes redondeados */  
   cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
   transition: transform 0.2s; /* Transición suave para el efecto hover */
 }
@@ -372,8 +369,6 @@ a{
   transform: translateY(0);
 }
 
-
-
 /* Media queries para ajustar el grid en diferentes tamaños de pantalla */
 @media (max-width: 768px) {
   .grid {
@@ -401,35 +396,7 @@ a{
   }
 }
 
-.btn-reservation{
-
-  width: 190px;
-  height: 33px;
-  padding: 25px;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
-  text-shadow: 4px 4px 10px yellowgreen;
-  border-radius: 10%;
-  transition-duration: 1000ms;
-  color: #5c5c5c;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 2px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 15px;
-  text-decoration: none;
-  display: flex;
-  background: linear-gradient(to right, rgb(248, 216, 216), yellow);
-}
-  .btn-reservation:hover {
-    background-color: #f2f2f2;
-    cursor: pointer;
-    padding: 30px;
-    font-size: large;
-}
-
-.btn-whatsapp{
+.btn-whatsapp {
 
   position: fixed; /* Posiciona el botón de forma fija */
     bottom: 30px; /* Distancia desde la parte inferior de la página */
@@ -448,25 +415,19 @@ a{
     z-index: 1000; /* Asegura que esté por encima de otros elementos */
 }
 
-footer{
-
+footer {
  padding: 20px;
   margin:30px;
   float: left;
-
 }
 
-footer p{
-
+footer p {
   margin-bottom: 10px;
   margin-top: 10px;
-
 }
 
-footer h3{
-
+footer h3 {
   font-size: 30px;
-
 }
 
 .btn-whatsapp img {
@@ -474,12 +435,9 @@ footer h3{
   height: 30px; /* Altura del icono de WhatsApp */
 }
 
-
-
 /* Estilos para dispositivos móviles */
 @media only screen and (max-width: 768px) {
-   
-    
+       
     .logo {
       max-width: 20%; 
       margin: 0 auto; 
