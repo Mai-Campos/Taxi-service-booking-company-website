@@ -136,11 +136,13 @@ header{
 
 .galery1, .galery2 {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 20px;
   margin: 6px;
   clear: both;
 }
+
+
 
 .card {
   display: flex;
@@ -153,6 +155,7 @@ header{
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
+
 }
 
 .card:hover {
@@ -219,32 +222,8 @@ a{
 
 }
 
-.btn-change {
-  position: absolute;/* Para que el span se comporte como un botón */
-  color: white;
-  font-size: 24px; /* Tamaño de la flecha */
-  margin-left: 7px; /* Espacio a la izquierda de la flecha */
-  cursor: pointer;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #49526ad3, #28324fd3);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  border: 2px solid ;
-  transition: transform 0.5s ease,  opacity 0.5s ease;
-  opacity: 1
-}
 
-.btn-change:hover {
-  filter: brightness(1.2);
-  
-}
 
-.rotate-left {
-  transform: rotate(-180deg); /* Rotación hacia la izquierda */
-}
-
-.rotate-right {
-  transform: rotate(180deg); /* Rotación hacia la derecha */
-}
 
 .modal {
   display: none; /* Oculto por defecto */
@@ -271,6 +250,14 @@ a{
 #modal-description{
  
   margin: 30px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+#modal-description2{
+
+   text-align: left;
+
 }
 
 
