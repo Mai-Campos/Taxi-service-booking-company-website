@@ -48,14 +48,14 @@ header{
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    background-color: rgba(219, 197, 85, 0.942);
+    background-color: rgba(219, 197, 85, 1);
     z-index: 5;
     position: fixed;
     width: 100%;
     top: 0;
-     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-     height: 90px;
-     font-size: 22px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    height: 90px;
+    font-size: 22px;
     
 
 }
