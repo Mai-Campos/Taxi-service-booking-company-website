@@ -27,6 +27,24 @@ h2 {
   font-size: 30px;
 }
 
+ul{
+
+  padding-left: 20px;
+
+}
+
+ ul li{
+
+  margin-bottom: 10px;
+
+}
+
+li::marker{
+
+  font-size: 1.1em;
+
+}
+
 /* Inicio del banner */
 
 .logo {
@@ -102,11 +120,7 @@ header {
   border-radius: 0.7rem;
 }
 
-.about-us {
-}
 
-.reservation {
-}
 
 .btn-reservation{
 
@@ -237,8 +251,8 @@ a {
   z-index: 1000; /* Por encima de otros elementos */
   left: 0;
   top: 0;
+  bottom: 0;
   width: 100%; /* Ancho completo */
-  height: 100%; /* Alto completo */
   overflow: auto; /* Habilitar scroll si es necesario */
   background-color:  rgba(219, 197, 85, 0.942);/* Fondo negro con opacidad */
 }
@@ -251,12 +265,13 @@ a {
   width: 100%; /* Ancho del modal */
   height: 100%;
   text-align: center;
+  font-family: Quicksand, Georgia, Times New Roman, Times, serif;
+  font-size: 1.2em;
 }
 
 #modal-description {
   margin: 30px;
-  font-size: 1.3em;
-  font-weight: bold;
+  
 }
 
 #modal-description2{
