@@ -45,6 +45,7 @@ $(document).ready(function () {
             title: "Traslado desde el aeropuerto Juan Gualberto Gómez a casas de alquiler y hoteles en La Habana y Varadero",
             description: "Viaja con comodidad y estilo desde el Aeropuerto Juan Gualberto Gómez hacia las casas de alquiler y hoteles en La Habana y Varadero. Nuestro servicio \
             de traslado te garantiza un inicio sin complicaciones para tus vacaciones en Cuba, con un conductor profesional que te recibirá a tu llegada.",
+
             galleryImages: ["img/Traslados aeropuertos/Cienfuegos.webp", "img/Traslados aeropuertos/Viñales.webp", "img/Destinos/Matanzas.webp"] // Imágenes de la galería
 
         },
@@ -52,6 +53,7 @@ $(document).ready(function () {
             title: "Traslado desde el aeropuerto Juan Gualberto Gómez a Cienfuegos",
             description: "Disfruta de un traslado cómodo y seguro desde el Aeropuerto Juan Gualberto Gómez hacia la hermosa ciudad de Cienfuegos. Nuestro servicio te garantiza un viaje \
             sin complicaciones, permitiéndote comenzar tu aventura cubana de la mejor manera posible.",
+  
             galleryImages: []
         }
         
@@ -165,7 +167,7 @@ $(document).ready(function () {
                 $('#modal-title').text(infoTraslados[infoKey].title);
                 $('#modal-description').text(infoTraslados[infoKey].description);
                 $('#modal-description2').text("");
-                $('#modal-description3').text("");
+                $('#modal-description2').hide(); // Oculta el elemento
                 $('.modal-gallery').empty();
                 infoTraslados[infoKey].galleryImages.forEach(image => {
                     $('.modal-gallery').append(`<img src="${image}" alt="Galería imagen" />`);
@@ -177,6 +179,7 @@ $(document).ready(function () {
                 $('#modal-title').text(infoTours[infoKey].title);
                 $('#modal-description').text(infoTours[infoKey].description);
                 $('#modal-description2').text(infoTours[infoKey].description2);
+                $('#modal-description2').show(); // Muestra el elemento
                 $('.modal-gallery').empty();
                 infoTours[infoKey].galleryImages.forEach(image => {
                     $('.modal-gallery').append(`<img src="${image}" alt="Galería imagen" />`);
