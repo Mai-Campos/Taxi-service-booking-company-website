@@ -1,188 +1,224 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TaxiPro</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/fonts.css">
-   
-    <script src="js/jquery-3.7.1.js"></script>
-    <script src="js/script.js"></script>
-    
-   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaxiPro</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/fonts.css">
+  
+  <script src="js/jquery-3.7.1.js"></script>
+  <script src="js/script.js"></script>
+
 </head>
 
 <body>
+  
+  <header>
     
-    <header>
+    <img src="img/logo.png" alt="Logo de la empresa TaxiPro" class="logo">
+    
+    <p class="slogan">Travel with freedom, travel with safety</p>
 
-        <img src="img/logo.png" alt="Logo de la empresa TaxiPro" class="logo">
-
-        <p class="slogan">Travel with freedom, travel with safety</p>
-
-        <img src="img/us-flag.svg" alt="Bandera de EEUU" class="flag" id="flag-us">
+    <img src="img/us-flag.svg" alt="Bandera de EEUU" class="flag" id="flag-us">
        
     </header>
 
+    <main>
+    
     <section class="information">
-
-        <h1 class="information__head">TaxiPro</h1>
-
-        <article class="information__article about-us">
-
-            <h2>¿Quienes somos?</h2><br>
-
-            <p>Bienvenido a <strong>TaxiPro</strong>, su servicio de taxis confiable. Solicite su taxi fácilmente 
-                con TaxiPro. Ofrecemos seguridad, nuestros choferes conocen bien las rutas, estan altamente calificados y cuentan con mucha experiencia, nos 
-                comprometemos a ofrecer un servicio de alta calidad en cada viaje y disponemos de 
-                precios competitivos. <strong><a href="">Reserve</a></strong> con nosotros hoy mismo y descubra la diferencia.
-                Puede ver en <strong><a href="">TripAdvisor</a></strong> las experiencias de nuestros clientes.
-                ¡No se arrepentirá!
-            </p><br>
-
-            
-
-        </article>
-
-        <article class="information__article reservation">
-
-            <h2>¿Como reservar?</h2><br>
-
-            <p>Para reservar puede presionar el boton que aparece debajo de este párrafo o  
-                utilizar el boton flotante con icono de WhatsApp que se muestra en la página, lo 
-                que lo redirigirá al chat de WhatsApp de nuestro agente donde podrá establecer 
-                contacto con él. También puede contactarnos a través de nuestras redes que aparecen 
-                en la sección de <em><a href="#contact-us">Contactanos</a></em>.
-            </p><br><br>
-            
-                <button class="btn-reservation" width="600">Reservar</button>
-
-        </article>
-
-
+      
+      <h1 class="information__head">TaxiPro</h1>
+      
+      <article class="information__article about-us">
+        
+        <h2>¿Quienes somos?</h2><br>
+        <p>Bienvenido a <strong>TaxiPro</strong>, su servicio de taxis confiable. Solicite su taxi fácilmente con TaxiPro. Ofrecemos seguridad, nuestros choferes conocen bien las rutas, estan altamente calificados y cuentan con mucha experiencia, nos comprometemos a ofrecer un servicio de alta calidad en cada viaje y disponemos de precios competitivos. <strong><a href="">Reserve</a></strong> con nosotros hoy mismo y descubra la diferencia. Puede ver en <strong><a href="">TripAdvisor</a></strong> las experiencias de nuestros clientes. ¡No se arrepentirá!</p><br>
+      
+      </article>
+      
+      <article class="information__article reservation">
+        
+        <h2>¿Como reservar?</h2><br>
+        <p>Para reservar puede presionar el boton que aparece debajo de este párrafo o utilizar el boton flotante con icono de WhatsApp que se muestra en la página, lo que lo redirigirá al chat de WhatsApp de nuestro agente donde podrá establecer contacto con él. También puede contactarnos a través de nuestras redes que aparecen en la sección de <em><a href="#contact-us">Contactanos</a></em>.</p><br>
+        
+        <a href="#services" id="services">Reservar</a>
+      
+      </article>
+    
     </section>
-
+  
     <section class="services">
-        <h2>Servicios</h2>
+      
+      <h2>Servicios</h2>
+      <h3>Traslados desde aeropuertos</h3>
+      
+      <div class="galery1">
         
-        <h3>Traslados desde aeropuertos</h3>
-        <div class="galery1">
-
-          <div class="card">
-            <img src="img/Traslados aeropuertos/Paseo del Prado.webp" alt="">
-            <h3>Traslado desde el aeropuerto José Martí a casas de alquiler y hoteles en <strong>La Habana</strong> y <strong>Varadero</strong>   </h3>
-            <p><a>Ver Información</a></p>
-          </div>
-
-          <div class="card">
-            <img src="img/Traslados aeropuertos/Trinidad.webp" alt="">
-            <h3>Traslado desde el aeropuerto José Martí a <strong>Cienfuegos</strong> y <strong>Trinidad</strong> </h3>
-            <p><a>Ver Información</a></p>
-          </div>
-
-          <div class="card">
-            <img src="img/Traslados aeropuertos/Viñales.webp" alt="Una imagen del mural de la prehistoria Cienfuegos">
-            <h3>Traslado desde el aeropuerto José Martí a  <strong>Viñales </strong></h3>
-            <p><a>Ver Información</a></p>
-          </div>
-
-          <div class="card">
-            <img src="img/Traslados aeropuertos/Internacional.webp" alt="">
-            <h3>Traslado desde el aeropuerto Juan Gualberto Gómez a casas de alquiler y hoteles en <strong>La Habana </strong>y <strong>Varadero</strong></h3>
-            <p><a>Ver Información</a></p>
-          </div>
-
-          <div class="card">
-            <img src="img/Traslados aeropuertos/Cienfuegos.webp" alt="">
-            <h3>Traslado desde el aeropuerto Juan Gualberto Gómez a  <strong>Cienfuegos </strong></h3>
-            <p><a>Ver Información</a></p>
-          </div>
+        <div class="card">
+          
+          <img src="img/Traslados aeropuertos/Paseo del Prado.webp" alt="">
+          <h3>Traslado desde el aeropuerto José Martí a casas de alquiler y hoteles en <strong>La Habana</strong> y <strong>Varadero</strong></h3>
+          
+          <p><a>Más información</a></p>
         
-          </div>
-<br><br>
-          <h3>Destinos Turísticos</h3>
-          <div class="galery2">
+        </div>
+        
+        <div class="card">
+          
+          <img src="img/Traslados aeropuertos/Trinidad.webp" alt="">
+          <h3>Traslado desde el aeropuerto José Martí a <strong>Cienfuegos</strong> y <strong>Trinidad</strong></h3>
+          
+          <p><a>Más información</a></p>
+        
+        </div>
 
-            <div class="card">
-              <img src="img/Destinos/Habana.webp" alt="">
-              <h3>Tour de un día desde Varadero hasta la Habana</h3>
-              <p><a>Ver Información</a></p>
-            </div>
-
-              <div class="card">
-                <img src="img/Destinos/Matanzas.webp" alt="">
-                <h3>Tour de un día desde Varadero hasta Matanzas</h3>
-                <p><a>Ver Información</a></p>
-                </div>
-
-                <div class="card">
-                  <img src="img/Destinos/Tres Ciudades.webp" alt="">
-                  <h3>Tour Tres Ciudades:  Villa Clara, Cienfuegos y Trinidad desde Varadero</h3>
-                  <button class="btn-change prev"><</button>
-                  <button class="btn-change next">></button>
-                  <p class="description"><a>Ver Información</a></p>
-                  </div>
-
-                  <div class="card">
-                    <img src="img/Destinos/Cienaga de Zapata.webp" alt="">
-                    <h3>Tour de un día desde Varadero hasta Cienaga de Zapata y Girón</h3>
-                    <p><a>Ver Información</a></p>
-                    </div>
-
-
-
+        <div class="card">
+          
+          <img src="img/Traslados aeropuertos/Viñales.webp" alt="Una imagen del mural de la prehistoria Cienfuegos">
+          <h3>Traslado desde el aeropuerto José Martí a  <strong>Viñales </strong></h3>
             
+          <p><a>Más información</a></p>
+          
+        </div>
 
-          </div>
+        <div class="card">
+          
+          <img src="img/Traslados aeropuertos/Internacional.webp" alt="">
+          <h3>Traslado desde el aeropuerto Juan Gualberto Gómez a casas de alquiler y hoteles en <strong>La Habana </strong>y <strong>Varadero</strong></h3>
+          
+          <p><a>Más información</a></p>
+          
+        </div>
 
+        <div class="card">
+          <img src="img/Traslados aeropuertos/Cienfuegos.webp" alt="">
+          <h3>Traslado desde el aeropuerto Juan Gualberto Gómez a  <strong>Cienfuegos </strong></h3>
+    
+          <p><a>Más información</a></p>
+    
+        </div>
+      
+      </div>
+      
+      <br>
+      
+      <h3>Destinos Turísticos</h3>
+      
+      <div class="galery2">
+        
+        <div class="card">
+          <img src="img/Destinos/Habana.webp" alt="">
+          <h3>Tour de un día desde <strong>Varadero</strong> hasta <strong>La Habana</strong></h3>
+      
+          <p><a>Más información</a></p>
+    
+        </div>    
+        
+        <div class="card">
+          <img src="img/Destinos/Matanzas.webp" alt="">
+          <h3>Tour de un día desde <strong>Varadero</strong> hasta <strong>Matanzas</strong></h3>
+  
+          <p><a>Más información</a></p>
+  
+        </div>
 
-           
+        <div class="card">
+          <img src="img/Destinos/Villa Clara.webp" alt="">
+          <h3>Tour Tres Ciudades:  <strong>Villa Clara</strong>, <strong>Cienfuegos</strong> y <strong>Trinidad</strong> desde <strong>Varadero</strong></h3>
+  
+          <p class="description"><a>Más información</a></p>
+  
+        </div>
+        
+        <div class="card">
+          <img src="img/Destinos/Tres Ciudades.webp" alt="">
+          <h3 >Tour Dos Ciudades: <strong>Cienfuegos</strong> y <strong>Trinidad</strong> desde <strong>Varadero</strong></h3>
+  
+          <p class="description"><a>Más información</a></p>
+  
+        </div>
+        
+        <div class="card">
+          <img src="img/Destinos/Cienaga de Zapata.webp" alt="">
+          <h3>Tour del <strong>Caribe</strong> desde <strong>Varadero</strong></h3>
+
+          <p class="description"><a>Más información</a></p>
+
+        </div>
+        
+        <div class="card">
+          <img src="img/Destinos/Cienaga de Zapata.webp" alt="">            <h3>Tour a <strong>Viñales</strong> desde <strong>Varadero</strong></h3>
+                      
+          <p class="description"><a>Más información</a></p>
+        
+        </div>
+        
+        <div class="card">
+          <img src="img/Destinos/Cienaga de Zapata.webp" alt="">               <h3>Tour a <strong>Soroa</strong> desde <strong>Varadero</strong></h3>
+                        
+          <p class="description"><a>Más información</a></p>
+          
+        </div>
+      
+      </div>
+    
     </section>
+    
+  </main>
 
     <div id="modal" class="modal">
+      
       <header>
-
+        
         <img src="img/logo.png" alt="Logo de la empresa TaxiPro" class="logo">
-
+        
         <p class="slogan">Travel with freedom, travel with Safety</p>
 
         <img src="img/us-flag.svg" alt="Bandera de EEUU" class="flag" id="flag-us">
-       
-
-    </header>
-
+      
+      </header>
+      
       <div class="modal-content">
         <button class="close" type="button">×</button>       
         <h2 id="modal-title"></h2>
-
-      <div class="modal-gallery">
+        
+        <div class="modal-gallery">
         <img src="img/Traslados aeropuertos/Paseo del Prado.webp" alt="Imagen 1" />
         <img src="img/Destinos/Cienaga de Zapata.webp" alt="Imagen 2" />
         <img src="img/Destinos/Tres Ciudades.webp" alt="Imagen 3" />
         <!-- Agrega más imágenes según sea necesario -->
-    </div>
+        
+      </div>
+      
       <p id="modal-description"></p>
       <p id="modal-description2"></p>
       
       <button class="btn-back">
-        <span class="btn-back-content">Volver atrás</span>
+        
+        <span class="btn-back-content">Volver</span>
+      
       </button>
-       </div>
-
+    
     </div>
-
-
-    <footer class="contact-us" id="contact-us">
-        <h3>Contacto</h3>
-        <p>WhatsApp : <a href="https://wa.me/639376770" target="_blank" >639376770</a></p>
-        <p>Instagram :</p>
-    </footer>
-
-    <div>
+  
+  </div>
+  
+  <footer class="contact-us" id="contact-us">
+    
+    <h3>Contacto</h3>
+    
+    <p>WhatsApp : <a href="https://wa.me/639376770" target="_blank" >+53 639376770</a></p>
+    <p>Instagram :</p>
+    
+  </footer>
+  
+  <div>
+    
     <a href="https://wa.me/639376770" class="btn-whatsapp" target="_blank" ><img src="img/icons8-whatsapp-100.svg" alt=""></a>
-    </div>
-   
+  
+  </div>
 
 </body>
+
 </html>

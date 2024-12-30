@@ -67,7 +67,7 @@ $(document).ready(function () {
      const infoTraslados = {
         "info1": {
             title: "Traslado desde el aeropuerto José Martí a casas de alquiler y hoteles en La Habana y Varadero",
-            description: "Usted puede solicitar nuestro servicio de recojida al aeropuerto internacional José Martí, La Habana, donde nuestro conductor\
+            description: "Usted puede solicitar nuestro servicio de recogida al Aeropuerto Internacional José Martí, La Habana, donde nuestro conductor\
             le esperará frente a la puerta por donde usted saldrá con un cartel con su nombre para trasladarlo al hospedaje que desee en la ciudad de La Habana\
              o Varadero, ofrecemos servicios los 7 días de la semana las 24 horas del día. \
              Lo llevamos hasta la puerta de su hospedaje sin cargos adicionales.",
