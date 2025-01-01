@@ -61,9 +61,8 @@ $(document).ready(function () {
 
     const infoTours = {
         "info1": {
-            title: "Tour de un día desde Varadero hasta la Habana",
-            description: "La Habana en un Día: Un Recorrido por la Esencia Cubana desde Varadero",
-             description2: "Hora de recojida 8:00 am en la puerta de su hospedaje o la ubicación que desee, se realiza una parada en el camino\
+            title: "La Habana en un Día: Un Recorrido por la Esencia Cubana desde Varadero",
+            description: "Hora de recojida 8:00 am en la puerta de su hospedaje o la ubicación que desee, se realiza una parada en el camino\
              en 'La Piña Colada'. Al llegar a la ciudad, se visitará el Cristo de La Habana, escultura que representa al Sagrado Corazón de Jesús,\
              elaborada con mármol de Carrara, mismo material utilizado en los monumentos del Cementerio de Colón de La Habana. Posteriormente se visitará la Real \
              Fábrica de Tabaco donde se encuentra el tabaco más grande del mundo. A continuación se realizará un recorrido por La Habana Vieja admirando sus 4 plazas:\
@@ -75,9 +74,8 @@ $(document).ready(function () {
                 "img/Destinos/Habana/Plaza Vieja.webp", "img/Destinos/Habana/Plaza de la Revolucion.webp"] // Imágenes de la galería
         },
         "info2": {
-            title: "Tour de un día desde Varadero hasta Matanzas",
-            description: "Matanzas: Un Viaje Inolvidable a la Ciudad de los Puentes",
-            description2: "Hora de recojida 8:00 am en la puerta de su hospedaje o la ubicacion que desee. Se comenzará visitando el museo de la Ruta del Esclavo.\
+            title: "Matanzas: Un Viaje Inolvidable a la Ciudad de los Puentes",
+            description: "Hora de recojida 8:00 am en la puerta de su hospedaje o la ubicacion que desee. Se comenzará visitando el museo de la Ruta del Esclavo.\
              Luego, se visitará el parque central con sus encantadoras calles y boulevard, y se visitará la catedral. Posteriormente, se explorará el punto mas alto de Matanzas,\
              Montserrate donde se podrá observar el Valle Yumuri y la iglesia Montserrate. También se visitarán las cuevas de Bellamar que se encuentran 700 metros bajo tierra. En el camino\
              de regreso a Varadero, se realizará una parada en las Cuevas de Saturno, donde podrá disfrutar de un horario de baño libre en los manantiales de la cueva. Se almorzará\
@@ -86,9 +84,8 @@ $(document).ready(function () {
             
         },
         "info3": {
-            title: "Tour Tres Ciudades",
-            description: "Tres Ciudades, Tres Experiencias: Un Viaje Inolvidable por Cuba",
-            description2: "Hora de recojida 6:00 am. Nuestro primer destino será Villa Clara donde,\
+            title: "Tres Ciudades, Tres Experiencias: Un Viaje Inolvidable por Cuba",
+            description: "Hora de recojida 6:00 am. Nuestro primer destino será Villa Clara donde,\
             se visitará el mausuleo de Ernesto Che Guevara en Santa Clara, el tren blindado y el Ingenio 'Manaca-Iznaga' donde podrá conocer sobre la producción de azúcar en la época colonial y la historia de este \
             Ingenio. Después de esta inmersión en la historia, se visitará Trinidad,\
             famosa por sus calles empedradas y su vibrante cultura, aquí podrá disfrutar de una experiencia inolvidable en el canopy, donde podrá deslizarse entre los arboles y disfrutar de vistas espectaculares. \
@@ -100,9 +97,8 @@ $(document).ready(function () {
             
         },
         "info4": {
-            title: "Tour Dos Ciudades",
-            description: "Descubre el Encanto de Cienfuegos y Trinidad: Dos Ciudades, Una Aventura",
-            description2: "Recojida 6:00 am. Nuestro primer destino será Trinidad donde podrá pasear por las calles empedradas de esta hermosa ciudad colonial.\
+            title: "Descubre el Encanto de Cienfuegos y Trinidad: Dos Ciudades, Una Aventura",
+            description: "Recojida 6:00 am. Nuestro primer destino será Trinidad donde podrá pasear por las calles empedradas de esta hermosa ciudad colonial.\
             Aquí podrá disfrutar de una experiencia inolvidable en el canopy,  donde podrás deslizarte entre los árboles y disfrutar de vistas espectaculares de la naturaleza circundante. Se almorzará en Trinidad, \
             donde podrá degustar la deliciosa gastronomía cubana. Posteriormente se visitará la ciudad de Cienfuegos,, donde se visitará Punta Gorda, un hermoso malecón que ofrece vistas impresionantes de la bahía. Se regresará a \
             Varadero al finalizar el recorrido llevando consigo un recuerdo inolvidable\
@@ -114,9 +110,8 @@ $(document).ready(function () {
         },
 
         "info5": {
-            title: "Tour del Caribe desde Varadero",
-            description: "Explora la Ciénaga de Zapata: Un Viaje al Corazón de la Naturaleza Cubana",
-            description2: "En este tour se le llevará a uno de los ecosistemas más ricos y diversos de Cuba.\
+            title: "Explora la Ciénaga de Zapata: Un Viaje al Corazón de la Naturaleza Cubana",
+            description: "En este tour se le llevará a uno de los ecosistemas más ricos y diversos de Cuba.\
             Se comenzará la aventura visitando el criadero de cocodrilos en la Cienaga donde podrá observar de cerca a estos fascinantes reptiles en su habitat natural. Luego, se explorará la Cueva de\
             los peces, un lugar ideal para los amantes del buceo y el esnórquel, aquí tendrá la oportunidad de sumergirse en aguas cristalinas y descubrir una gran variedad de peces tropicales.\
             Habrá un horario de baño libre en la playa del sur donde podrá relajarse y disfrutar del sol . Se almorzará en un restaurante típico cubano llamado 'Casa del Campesino'\
@@ -126,9 +121,8 @@ $(document).ready(function () {
         },
 
         "info6": {
-            title: "Tour de un dia desde Varadero hasta Viñales, Pinar del Rio",
-            description: "Explora Viñales: Paisajes que Cautivan, Experiencias que Inspiran",
-            description2: "Se comenzará el tour con una visita a el Valle De La Prehistoria, un lugar fascinante donde se podrá\
+            title: "Explora Viñales: Paisajes que Cautivan, Experiencias que Inspiran",
+            description: "Se comenzará el tour con una visita a el Valle De La Prehistoria, un lugar fascinante donde se podrá\
             apreciar esculturas gigantes de dinosaurios y aprender sobre la historia natural de la región. A continuación se explorará\
             la Cueva del Indio, una impresionante cueva que ofrece un recorrido en bote por sus aguas. También\
             se visitará el pueblo de Viñales y los sembradíos de tabaco, donde podrá interactuar con los campesinos y conocer más sobre la producción de tabaco\
@@ -137,9 +131,8 @@ $(document).ready(function () {
         },
 
         "info7": {
-            title: "Tour de un dia desde Varadero hasta Soroa, Pinar del Rio",
-            description: "Soroa: Un Refugio de Paz y Naturaleza en el Corazón de Cuba",
-            description2: "Un tour ideal para los que buscan un escape del bullicio de la ciudad. Se comenzará el paseo visitando las impresionantes cascadas de Soroa, donde podrá disfrutar de \
+            title: "Soroa: Un Refugio de Paz y Naturaleza en el Corazón de Cuba",
+            description: "Un tour ideal para los que buscan un escape del bullicio de la ciudad. Se comenzará el paseo visitando las impresionantes cascadas de Soroa, donde podrá disfrutar de \
              un horario libre de baño en sus refrescantes aguas. Posteriormente se visitará el Orquideareo, un jardín botánico que alberga una vasta colección de orquídeas y otras plantas\
              tropicales, aquí podrá disfrutar de un paseo tranquilo entre la naturaleza. Se almuerzará en un \
              restaurante tipico cubano, donde podra degustar platos locales. Después de reponer energías, se visitarán las Terrazas y la casa de Polo\
@@ -212,6 +205,7 @@ $(document).ready(function () {
         $('.services').show();
     });
 
+ 
    
      
 });
