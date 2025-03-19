@@ -97,7 +97,7 @@
   
     <section class="services">
       
-      <h2>Servicios</h2>
+      <h2>¿ Que ofrecemos?</h2>
       <h3>Traslados desde aeropuertos</h3>
       
       <div class="galery1">
@@ -286,10 +286,12 @@
       <p id="modal-description"></p>
     
       
-      <button class="btn-back">
-        
+      <button class="btn-back">  
         <span class="btn-back-content">Volver</span>
-      
+      </button>
+
+      <button class="btn-reserve">  
+        <span class="btn-reserve-content">Reservar</span>
       </button>
        </div>
 
@@ -301,11 +303,12 @@
      
       <div class="contact-us__container">
       
-        <form class="contact-us__form">
-          <input type="text" placeholder="  Nombre" required>
-          <input type="email" placeholder="  Correo Electrónico" required>
-          <textarea placeholder="  Mensaje" required></textarea>
-          <button type="submit">Enviar Mensaje</button>
+        <form class="contact-us__form" id= "form-telegram">
+          <input type="text" placeholder="  Nombre" required id="name">
+          <input type="email" placeholder="  Correo Electrónico" required id="email">
+          <input type="number" placeholder="Cantidad de pasajeros" required id="passengers" min="1" value="1">
+          <textarea placeholder="  Mensaje" required id="message"></textarea>
+          <button type="submit">Enviar</button>
         </form>
     
         <!-- Detalles de Contacto -->

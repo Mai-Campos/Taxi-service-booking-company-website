@@ -205,6 +205,32 @@ $(document).ready(function () {
         $('.services').show();
     });
 
+    //Telegram
+    document.getElementById('form-telegram').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const messageContent = document.getElementById('message').value;
+        const passengers = document.getElementById('passengers').value;
+        const token = '7930092093:AAFZdgZVIuqM8P8QYy8RhynU84GbQHXRjoo'; // Reemplaza con tu token
+        const chatId = '-4680279133'; // Reemplaza con tu chat ID
+        const message = `Nuevo mensaje de contacto:
+        Nombre: ${name}
+        Email: ${email}
+        Mensaje: ${messageContent}
+        Pasajeros: ${passengers}`;
+
+    const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
+    
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                console.log('Mensaje enviado:', data);
+            })
+            .catch(error => {
+                console.error('Error al enviar el mensaje:', error);
+            });
+    });
  
    
      

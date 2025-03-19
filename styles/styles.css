@@ -336,7 +336,7 @@ main {
   transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el mouse */
 }
 
-.btn-back {
+.btn-back, .btn-reserve {
   margin: 1rem;
   --button_radius: 0.75em;
   --shadow-color: #2225;
@@ -351,7 +351,7 @@ main {
   padding: 0.75em 1em;
 }
 
-.btn-back-content {
+.btn-back-content, .btn-reserve-content {
   display: block;
   box-sizing: border-box;
   border: 2px solid var(--button_outline_color);
@@ -541,4 +541,5 @@ main {
     
     }
 
+   
   }
