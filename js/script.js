@@ -210,6 +210,12 @@ $(document).ready(function () {
         event.preventDefault();
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
+        const pickupPlace = document.getElementById('pick-up-place').value;
+        const destiny = document.getElementById('destiny').value;
+        const pickupDate = document.getElementById('date').value;
+        const vehicle = document.getElementById('vehicle').value;
+        const guide = document.getElementById('guide').value;
+        const lang = document.getElementById('languajes').value;
         const messageContent = document.getElementById('message').value;
         const passengers = document.getElementById('passengers').value;
         const token = '7930092093:AAFZdgZVIuqM8P8QYy8RhynU84GbQHXRjoo'; // Reemplaza con tu token
@@ -217,8 +223,14 @@ $(document).ready(function () {
         const message = `Nuevo mensaje de contacto:
         Nombre: ${name}
         Email: ${email}
-        Mensaje: ${messageContent}
-        Pasajeros: ${passengers}`;
+        Lugar de Recojida: ${pickupPlace}
+        Fecha de Recojida: ${pickupDate}
+        Destino: ${destiny}
+        Vehiculo: ${vehicle}
+        Guía : ${guide}
+        Idioma: ${lang}
+        Pasajeros: ${passengers}
+        Detalles: ${messageContent}`;
 
     const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
     

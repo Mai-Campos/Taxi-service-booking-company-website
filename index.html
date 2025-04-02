@@ -321,13 +321,17 @@
             <div>
               <label for="destiny">Destino</label>
               <select name="destiny" id="destiny" required>
-                <option value="destiny-1">Pinar del Rio</option>
-                <option value="destiny-2">Matanzas</option>
-                <option value="destiny-3">Varadero</option>
-                <option value="destiny-4">La Habana</option>
-                <option value="destiny-5">Cienfuegos</option>
-                <option value="destiny-6">Trinidad</option>
-                <option value="destiny-7">Santiago de Cuba</option>
+                <option value="Personalizado"">Personalizado</option>
+                <option value="Pinar del Rio - Soroa">Pinar del Rio - Soroa</option>
+                <option value="Pinar del Rio - Viñales">Pinar del Rio - Viñales</option>
+                <option value="Matanzas">Matanzas</option>
+                <option value="Varadero">Varadero</option>
+                <option value="La Habana">La Habana</option>
+                <option value="Cienfuegos y Trinidad">Cienfuegos y Trinidad</option>
+                <option value="Villa Clara, Cienfuegos y Trinidad">Villa Clara, Cienfuegos y Trinidad</option>
+                <option value="Cienaga de Zapata">Cienaga de Zapata</option>
+                <option value="Aeropuerto Juan Gualberto Gomez">Aeropuerto Juan Gualberto Gomez</option>
+                <option value="Aeropuerto Jose Martí">Aeropuerto Jose Martí</option>
               </select>
             </div>
   
@@ -337,7 +341,7 @@
             <h4>Fecha y hora de recogida</h4>
             <div class="date-time__input-container">
               <input type="date" id="date" required>
-              <input type="time" id="time" required>
+              <input type="time" id="time" >
             </div>
           </div>
   
@@ -351,31 +355,31 @@
             <div>
               <label for="vehicle">Vehículo</label>
               <select name="vehicle" id="vehicle" required>
-                <option value="vehicle-1">Auto clasico</option>
-                <option value="vehicle-2">Taxi</option>
-                <option value="vehicle-3">Van</option>
+                <option value="Auto Clasico">Auto clasico</option>
+                <option value="Taxi">Taxi</option>
+                <option value="Van">Van</option>
               </select>
               <p id="vehicle-error">El límite de pasajeros para este vehículo es 4</p>
             </div>
   
           </div>
           
-          <label for="guia">¿Desea un guía turístico?</label>
-          <select id="guia" name="guia" onchange="mostrarIdiomas(this.value)" required>
+          <label for="guide">¿Desea un guía turístico?</label>
+          <select id="guide" name="guide" onchange="mostrarIdiomas(this.value)" required>
             <option value="no">No</option>
             <option value="si">Sí</option>
           </select>
           
           <!-- Campo para seleccionar el idioma del guía (oculto inicialmente) -->
           <div id="idiomas-container" class="hidden">
-            <label for="idiomas">Seleccione el idioma del guía:</label>
-            <select id="idiomas" name="idiomas">
-              <option value="lang-1">Español</option>
-              <option value="lang-2">Inglés</option>
-              <option value="lang-3">Francés</option>
-              <option value="lang-4">Alemán</option>
-              <option value="lang-5">Ruso</option>
-              <option value="lang-6">Italiano</option>
+            <label for="languajes">Seleccione el idioma del guía:</label>
+            <select id="languajes" name="languajes">
+              <option value="Español">Español</option>
+              <option value="Inglés">Inglés</option>
+              <option value="Francés">Francés</option>
+              <option value="Alemán">Alemán</option>
+              <option value="Ruso">Ruso</option>
+              <option value="Italiano">Italiano</option>
             </select>
           </div>
           
